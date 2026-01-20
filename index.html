@@ -394,12 +394,17 @@
             }
 
             section {
-                padding: 4px;
-                padding-bottom: 5px;
+                padding: 20px 10px; /* 20px sopra/sotto, 10px lati */
             }
 
-            section:nth-of-type(1) {
-                margin-bottom: 0px;
+            section:first-of-type {
+                padding-top: 30px !important; 
+            }
+            /* Regola l'altezza del titolo su Mobile */
+            section h2 {
+                margin-top: 0 !important;    /* Toglie lo spazio "casuale" del browser */
+                padding-top: 5px;           /* <--- MODIFICA QUESTO NUMERO per alzare/abbassare */
+                margin-bottom: 30px;         /* Spazio sotto il titolo */
             }
 
             .testo-bio {
